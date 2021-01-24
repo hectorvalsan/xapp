@@ -1,0 +1,114 @@
+﻿
+@page "{title?}"
+@using xapp.Models
+@model DocsModel
+<!-- <!DOCTYPE html>
+<html>
+  <head> -->
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- </head>
+<body> -->
+
+
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    }
+  };
+</script>
+<script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+<style>
+    nav {
+        border-bottom: 1px solid black;
+    }
+
+    .crumbs ol {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    .crumb {
+        display: inline-block;
+    }
+
+        .crumb a::after {
+            display: inline-block;
+            color: #000;
+            content: '>';
+            font-size: 80%;
+            font-weight: bold;
+            padding: 0 3px;
+        }
+
+    ol {
+        padding-left: 1.8em;
+    }
+</style>
+
+<div style="left: 5px;width: 125px;position: fixed; top: 65px;margin-left:5px; font-size: 10px; ">
+    <h6>Chapters</h6>
+    <ol>
+        <li><a href="#chapter-1">Chapter 1</a>
+        <li><a href="#chapter-2">Chapter 2</a>
+        <li><a href="#chapter-3">Chapter 3</a>
+        <li><a href="#chapter-3">Chapter 4</a>
+        <li><a href="#chapter-3">Chapter 5</a>
+    </ol>
+</div>
+
+
+<div class="ui raised very padded text container segment" style="margin-top:5px;">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Library</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+    </nav>
+
+
+
+    <h1>Some Fresh Title</h1>
+    <p>This is where some content would go.</p>
+
+    When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
+    $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+
+
+    <h2>Some Fresh Title</h2>
+    Bona fide: In good faith
+    This adjective originally described someone bargaining or working in good faith, meaning they could be trusted. Today it's used to describe anything real or authentic, as in “this painting is a bona fide Picasso.”
+    Carpe diem: Seize the day
+    This philosophy was originally coined by the Roman poet Horace to encourage people to live life to the fullest. The original YOLO (you only live once), it was later made popular in England by 17th century poet Robert Herrick
+
+    Bona fide: In good faith
+    This adjective originally described someone bargaining or working in good faith, meaning they could be trusted. Today it's used to describe anything real or authentic, as in “this painting is a bona fide Picasso.”
+    Carpe diem: Seize the day
+    This philosophy was originally coined by the Roman poet Horace to encourage people to live life to the fullest. The original YOLO (you only live once), it was later made popular in England by 17th century poet Robert Herrick
+    <h2>Some Fresh Title</h2>
+
+    Bona fide: In good faith
+    This adjective originally described someone bargaining or working in good faith, meaning they could be trusted. Today it's used to describe anything real or authentic, as in “this painting is a bona fide Picasso.”
+    Carpe diem: Seize the day
+    This philosophy was originally coined by the Roman poet Horace to encourage people to live life to the fullest. The original YOLO (you only live once), it was later made popular in England by 17th century poet Robert Herrick
+
+    <h3>Some Fresh Title</h3>
+    Bona fide: In good faith
+    This adjective originally described someone bargaining or working in good faith, meaning they could be trusted. Today it's used to describe anything real or authentic, as in “this painting is a bona fide Picasso.”
+    Carpe diem: Seize the day
+    This philosophy was originally coined by the Roman poet Horace to encourage people to live life to the fullest. The original YOLO (you only live once), it was later made popular in England by 17th century poet Robert Herrick
+
+
+
+</div>
+
+
+
+
+</div>
